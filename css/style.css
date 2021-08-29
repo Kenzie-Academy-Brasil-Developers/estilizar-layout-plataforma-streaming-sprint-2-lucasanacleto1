@@ -21,12 +21,29 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
+		background-color: #00002e;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	figcaption {
+		display: none;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		margin-bottom: 50px;	
+	}
+
+	.pg-home section header h2{
+		color: white;
+		font-size: 50px;
 	}
 
 /*RODAPÉ*/
@@ -34,5 +51,83 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		margin: 50px auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	ul {
+		width: 858px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		list-style: none;
+		justify-content: space-between;
+		max-width: 100%;
+		list-style: none;
+	}
+	li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 186px;
+	}
+
+li img {
+	width: 100%;
+	height: 100%;
+}
+
+li figure figcaption{
+	color: white;
+}
+
+li h3{
+	color: white;
+}
+
+footer button{
+	width: 250px;
+	height: 50px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+@media(max-width: 800px) {
+
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
 		
 	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	ul {
+
+		width: 410px;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	li {
+
+		
+		
+
+		
+	}
+
+
+
+
+}
