@@ -44,6 +44,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	.pg-home section header h2{
 		color: white;
 		font-size: 50px;
+		text-align: center;
 	}
 
 /*RODAPÉ*/
@@ -113,21 +114,21 @@ footer button{
 
 	ul {
 
-		width: 410px;
+		width: 400px;
 		flex-wrap: wrap;
 		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	li {
-
-		
-		
-
-		
+		justify-content: center;
 	}
 
 
 
+}
+@media(max-width: 600px) {
+	ul {
 
+		width: 400px;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
